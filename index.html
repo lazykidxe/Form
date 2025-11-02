@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Form</title>
+</head>
+<body style="font-family:sans-serif;padding:30px;">
+  <h2>Send Me a Message</h2>
+  <form action="/api/send-email" method="POST" enctype="multipart/form-data">
+    <div style="margin-bottom:10px;">
+      <label>Message:</label><br />
+      <input type="text" name="message" style="width:300px;padding:5px;" required />
+    </div>
+    <div style="margin-bottom:10px;">
+      <label>Attach Image:</label><br />
+      <input type="file" name="image" accept="image/*" />
+    </div>
+    <button type="submit" style="padding:6px 12px;">Send</button>
+  </form>
+</body>
+</html>
